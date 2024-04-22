@@ -47,8 +47,8 @@ app.use('/auth',authRoute);
 
 const mongoAtlas = "mongodb+srv://soniyasigroha001:hMJrPlfvBwwZrrn9@cluster0.knnmjxx.mongodb.net/SampleDB?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect(mongoAtlas,{
-    useNewUrlParser : true,
-    useUnifiedTopology : true
+    // useNewUrlParser : true,
+    // useUnifiedTopology : true
 })
 .then(res => {
     app.listen(Port, hostname,() =>{
